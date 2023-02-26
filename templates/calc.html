@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+         <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+          <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+        <h1><center>*******Welcome to my Calculator Program********</center></h1>
+        <div class="container">
+            <div class="form-group">
+                <label>Enter First Number</label>
+                <input type="text" name="val1" value="{{a}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Enter Second Number</label>
+                <input type="text" name="val2" value="{{b}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Result</label>
+                <input type="text" name="res" value="{{res}}" class="form-control">
+            </div>
+            <div>
+                <button type="submit" name="btnsum" class="form-control btn btn-success">SUM</button>
+            </div><br>
+            <div>
+                <button type="submit" name="btnsub" class="form-control btn btn-danger">SUB</button>
+            </div><br>
+            <div>
+                <button type="submit" name="btnmul" class="form-control btn btn-primary">MUL</button>
+            </div><br>
+            <div>
+                <button type="submit" name="btndiv" class="form-control btn btn-success">DIV</button>
+            </div>
+        </div>
+    </form>
+    </body>
+
+</html>
