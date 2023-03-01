@@ -16,17 +16,17 @@
     <body>
         <form method="post">
             {% csrf_token %}
-        <h1><center>*******Welcome to my Calculator Program********</center></h1>
+        <h1 style="color:red;"><center>*******Welcome to my Calculator Program********</center></h1>
         <div class="container">
-            <div class="form-group">
+            <div class="form-group" style="color:red;" >
                 <label>Enter First Number</label>
                 <input type="text" name="val1" value="{{a}}" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="color:red;">
                 <label>Enter Second Number</label>
                 <input type="text" name="val2" value="{{b}}" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="color:red;">
                 <label>Result</label>
                 <input type="text" name="res" value="{{res}}" class="form-control">
             </div>
@@ -34,10 +34,10 @@
                 <button type="submit" name="btnsum" class="form-control btn btn-success">SUM</button>
             </div><br>
             <div>
-                <button type="submit" name="btnsub" class="form-control btn btn-danger">SUB</button>
+                <button type="submit" name="btnsub" class="form-control btn btn-success">SUB</button>
             </div><br>
             <div>
-                <button type="submit" name="btnmul" class="form-control btn btn-primary">MUL</button>
+                <button type="submit" name="btnmul" class="form-control btn btn-success">MUL</button>
             </div><br>
             <div>
                 <button type="submit" name="btndiv" class="form-control btn btn-success">DIV</button>
